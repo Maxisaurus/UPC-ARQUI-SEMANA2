@@ -21,6 +21,8 @@ public class AutorController {
 	@GetMapping("/listaPorPK/{id}")
 	public List<Autor> listaPorPK(@PathVariable int id){
 		return service.listaPorPK(id);
+		
+		
 	}
 }
 
