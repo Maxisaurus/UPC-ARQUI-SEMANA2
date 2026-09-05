@@ -10,7 +10,7 @@ import com.empresa.entity.Autor;
 public interface AutorRepository extends JpaRepository<Autor, Integer>{
 	
 	//Usando Query Nativo de PostgreSQL
-	@Query(nativeQuery = true, value="select * from autor where idautor = 1?")
+	@Query(nativeQuery = true, value="select * from autor where idautor = ?1")
 	public List<Autor> listaAutorPorPK(int idAutor);
 	
 	
